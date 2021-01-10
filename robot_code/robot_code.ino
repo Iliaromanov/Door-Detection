@@ -10,10 +10,23 @@ int start_of_range = 120;
 
 void setup() {
   scan_servo.attach(5); // servo on pin 5
-  SD.begin(10); // sd card on pin 10, plus the spi port
+ // SD.begin(10); // sd card on pin 10, plus the spi port
   scan_servo.write(start_of_range);
+  Serial.begin(9600);
+  
 }
 
+
+// to do: file making, file writing, ultrasonic scanning
 void loop() {
+  for(int angle = start_of_range; angle > start_of_range - 90; angle--){
+
+    scan_servo.write(angle);
+    //delay(30);
+    int distance = dist.read();
+    
+  }
+  delay(500);
+
   
 }
