@@ -1,14 +1,14 @@
 # Identification of open/not-open door using the ultrasonic module
 
-# Description
+## Description
 
-# Visuals
+## Visuals
 
-# Installation
+## Installation
     requirements.txt
 
-# Contributing
+## Contributing
 
-# Authors and acknowledgement
+## Authors and acknowledgement
 
-# Project Status
+## Project Status
