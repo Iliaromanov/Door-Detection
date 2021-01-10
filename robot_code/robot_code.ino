@@ -21,13 +21,13 @@ void loop() {
   if(digitalRead(4) == 0){
     scan_servo.write(start_of_range);
     delay(500);
-    String scan = "1,";
+    String scan = "0";
     
     for(int angle = start_of_range; angle > start_of_range - 90; angle--){
       scan_servo.write(angle);
       //delay(30);
       int distance = dist.read();
-      String distance_string = String(distance) + ",";
+      String distance_string = "," + String(distance);
       scan += distance_string;
       delay(25);
     }
