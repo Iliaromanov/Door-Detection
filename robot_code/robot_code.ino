@@ -17,15 +17,18 @@ void setup() {
 }
 
 
-// to do: file making, file writing, ultrasonic scanning
+// to do: file making (, file writing, ultrasonic scanning (done)
 void loop() {
+  String scan = "0,";
   for(int angle = start_of_range; angle > start_of_range - 90; angle--){
-
     scan_servo.write(angle);
     //delay(30);
     int distance = dist.read();
-    
+    String distance_string = String(distance) + ",";
+    scan += distance_string;
+    delay(100);
   }
+  Serial.println(scan);
   delay(500);
 
   
