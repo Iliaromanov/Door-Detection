@@ -1,4 +1,4 @@
-# Script to generate samle dataset before Nathaniel finishes collecting real data
+# Script to generate sample dataset before Nathaniel finishes collecting real data
 import csv
 import random
 
