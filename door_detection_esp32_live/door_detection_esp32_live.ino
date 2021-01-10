@@ -19,8 +19,13 @@ void setup() {
 }
 
 void loop() {
-  while(Serial2.available()>0){
-    Serial.print(Serial2.read());
+  while(Serial2.available()){
+   // if(Serial2.read() == 0x2E)
+    //  Serial.println();
+   // else
+      char x = Serial2.read();
+      Serial.print(x);
+      
+    
   }
-
 }
