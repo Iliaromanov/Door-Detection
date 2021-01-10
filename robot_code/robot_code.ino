@@ -21,7 +21,7 @@ void loop() {
   if(digitalRead(4) == 0){
     scan_servo.write(start_of_range);
     delay(500);
-    String scan = "0,";
+    String scan = "1,";
     
     for(int angle = start_of_range; angle > start_of_range - 90; angle--){
       scan_servo.write(angle);
