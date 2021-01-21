@@ -4,5 +4,7 @@ Collecting our own data, we trained a neural network to predict whether a door i
 
 To see the model training and validation you can go to the model.ipynb Jupyter Notebook above.
 
+<!--
 ## Installation
     requirements.txt
+-->
